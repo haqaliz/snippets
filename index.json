@@ -1,0 +1,66 @@
+{
+    "javascript": {
+        "snippets": {
+            "imp": "import ${1:moduleName} from '${2:module}';${0}",
+            "imn": "import '${1:module}';${0}",
+            "imd": "import { ${1:portion} } from '${2:module}';${0}",
+            "ime": "import * as ${2:alias} from '${1:module}';${0}",
+            "ima": "import { ${2:originName} as ${3:alias} } from '${1:module}';${0}",
+
+            "rqr": "require('${1:PACKAGE}');${0}",
+            "req": "const ${1:packageName} = require('${1:package}');${0}",
+            "mde": "module.exports = {\n\t${0}\n};\n",
+            "env": "export const ${1:exportVariable} = ${2:localVariable};\n",
+            "enf": "export const ${1:functionName} = (${2:params}) => {\n\t${0}\n};\n",
+            "edf": "export default function ${1:${TM_FILENAME_BASE}}(${2:params}) {\n\t${0}\n};\n",
+            "ecl": "export default class ${1:className} {\n\t${0}\n};\n",
+            "ece": "export default class ${1:className} extends ${2:baseclassName} {\n\t${0}\n};\n",
+            "con": "constructor(${1:params}) {\n\t${0}\n}",
+            "met": "${1:methodName}(${2:params}) {\n\t${0}\n}",
+            "pge": "get ${1:propertyName}() {\n\treturn this.${0};\n}",
+            "pse": "set ${1:propertyName}(${2:value}) {\n\t${0};\n}",
+
+            "fre": "${1:array}.forEach(${2:currentItem} => {\n\t${0}\n});",
+            "fof": "for (const ${1:item} of ${2:object}) {\n\t${0}\n}",
+            "fin": "for (const ${1:item} in ${2:object}) {\n\t${0}\n}",
+
+            "anfn": "(${1:params}) => {\n\t${2}\n}",
+            "nfn": "const ${1:name} = (${2:params}) => {\n\t${3}\n}",
+            "dob": "const {${2:propertyName}} = ${1:objectToDestruct};",
+            "dar": "const [${2:propertyName}] = ${1:arrayToDestruct};",
+
+            "sti": "setInterval(() => {\n\t${2}\n}, ${0:intervalInms});",
+            "sto": "setTimeout(() => {\n\t${2}\n}, ${1:delayInms});",
+
+            "prom": "return new Promise((resolve, reject) => {\n\t${1}\n});",
+            "thenc": ".then((${1:result}) => {\n\t${2}\n}).catch((${3:err}) => {\n\t${4}\n});",
+
+            "cas": "console.assert(${1:expression}, ${2:object});",
+            "ccl": "console.clear();",
+            "cco": "console.count(${1:label});",
+            "cdb": "console.debug(${1:object});",
+            "cdi": "console.dir(${1:object});",
+            "cer": "console.error(${1:object});",
+            "cgr": "console.group('${1:label}');",
+            "cge": "console.groupEnd();",
+            "clg": "console.log(${1:object});",
+            "clo": "console.log('${1:object} :>> ', ${1:object});",
+            "ctr": "console.trace(${1:object});",
+            "cwa": "console.warn(${1:object});",
+            "cin": "console.info(${1:object});",
+            "clt": "console.table(${1:object});",
+            "cti": "console.time(${1:object});",
+            "cte": "console.timeEnd(${1:object});"
+        }
+    },
+    "vue": {
+        "snippets": {
+            "!!": "<template>\n\t\n</template>\n\n<script>\nexport default {\n\tname: '${1:NAME}',\n\tdata() {\n\t\treturn {\n\t\t\t\n\t\t};\n\t},\n\tmethods: {\n\t\t\n\t}\n};\n</script>\n\n<style scoped lang='scss'>\n\t\n</style>"
+        }
+    },
+    "svelte": {
+        "snippets": {
+            "!!": "<script lang='ts'>\n\t\n</script>\n\n<!-- ${1:TEMPLATE} -->\n\n<style lang='scss'>\n\t\n</style>"
+        }
+    }
+}
