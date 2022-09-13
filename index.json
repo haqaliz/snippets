@@ -55,7 +55,15 @@
     },
     "vue": {
         "snippets": {
-            "!!": "<template>\n\t\n</template>\n\n<script>\nexport default {\n\tname: '${1:NAME}',\n\tdata() {\n\t\treturn {\n\t\t\t\n\t\t};\n\t},\n\tmethods: {\n\t\t\n\t}\n};\n</script>\n\n<style scoped lang='scss'>\n\t\n</style>"
+            "!!": "<template>\n\t\n</template>\n\n<script>\nexport default {\n\tname: '${1:NAME}',\n\tdata() {\n\t\treturn {\n\t\t\t\n\t\t};\n\t},\n\tmethods: {\n\t\t\n\t}\n};\n</script>\n\n<style scoped lang='scss'>\n\t\n</style>",
+            "template": "<template>\n\t\n</template>",
+            "script": "<script>\nexport default {\n\tname: '${1:NAME}',\n\tdata() {\n\t\treturn {\n\t\t\t\n\t\t};\n\t},\n\tmethods: {\n\t\t\n\t}\n};\n</script>",
+            "style": "<style scoped lang='scss'>\n\t\n</style>",
+            "vif": "v-if=\"${1:condition}\"",
+            "vef": "v-else-if=\"${1:condition}\"",
+            "ve": "v-else",
+            "vfof": "<div\n\tv-for=\"${1:item} of ${2:object}\"\n\t:key=\"\"\n>\n\t${0:content}\n</div>",
+            "vfin": "<div\n\tv-for=\"${1:item} in ${2:object}\"\n\t:key=\"\"\n>\n\t${0:content}\n</div>"
         }
     },
     "svelte": {
